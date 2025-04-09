@@ -6,13 +6,14 @@ const config = {
   projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID,
   db: process.env.EXPO_PUBLIC_APPWRITE_DB_ID,
   col: {
-      // tasks: process.env.EXPO_PUBLIC_APPWRITE_COL_TASKS_ID,
+    // tasks: process.env.EXPO_PUBLIC_APPWRITE_COL_TASKS_ID,
+    profiles: process.env.EXPO_PUBLIC_APPWRITE_COL_PROFILES_ID,
   },
 };
 
 const client = new Client()
-  .setEndpoint(config.endpoint!) // 
-  .setProject(config.projectId!); 
+  .setEndpoint(config.endpoint!) //
+  .setProject(config.projectId!);
 
 switch (Platform.OS) {
   case "ios":
@@ -23,7 +24,7 @@ switch (Platform.OS) {
     break;
 }
 
-const account = new Account(client)
+const account = new Account(client);
 
 const database = new Databases(client);
 
