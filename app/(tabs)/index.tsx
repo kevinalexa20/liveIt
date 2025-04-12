@@ -5,7 +5,7 @@ export default function Index() {
     <View className="flex-1 bg-background-50">
       {/* Header */}
       <View className="flex-row justify-between items-center px-4 py-2 bg-background-100">
-        <Text className="text-lg font-bold text-typography-900">Today</Text>
+        <Text className="text-lg font-bold text-typography-90`0">Today</Text>
         <Text className="text-sm text-typography-500">...</Text>
       </View>
 
